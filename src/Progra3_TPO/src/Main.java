@@ -62,10 +62,11 @@ public class Main {
 		
 		System.out.println("\n\n##### EJERCICIO 2 #####\n ");
 
-		System.out.println("Arbol de Recubrimiento Mínimo PRIM:\n ");
 		//generar un grafo de recubrumiento mínimo con PRIM
+		System.out.println("Arbol de Recubrimiento Mínimo PRIM:\n ");
 		GrafoDinamic prim = AlgoritmosTP.recubrimientoPRIM(grafo);
-		//valido el nuevo grafo
+		
+		//valido el nuevo grafo (vertices y aristas)
 		System.out.println("Vertices: ");
 		vertices = AlgoritmosTP.vertices(prim);
 		for(int i=0; i<vertices.length; i++) {
