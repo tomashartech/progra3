@@ -47,15 +47,16 @@ PRIM:
      
      
  Verificación:
- Se ejecutó el código implementado desde una clase main en la que se utilizan tanto los métodos de la clase Grafo proveída como los métodos desarrollados.
- Se inicia generando un grafo insertandole:
- - 5 vertices {1,2,3,4,5}  (se imprimen los vertices por pantalla)
- - Aristas: 1-2; 1-3; 2-4; 2-5; 3-5; (se imprimen las aristas por pantalla)
+ 
+Se ejecutó el código implementado desde una clase main en la que se utilizan tanto los métodos de la clase Grafo proveída como los métodos desarrollados.
+ - Se inicia generando un grafo insertandole:
+    - 5 vertices {1,2,3,4,5}  (se imprimen los vertices por pantalla)
+    - Aristas: 1-2; 1-3; 2-4; 2-5; 3-5; (se imprimen las aristas por pantalla)
  - Se ejecuta el algoritmo DFS pasándole el grafo como parámetro y el vertice 1 como el origen.
-  - El algoritmo imprime como queda recorrido el grafo.
+    - El algoritmo imprime como queda recorrido el grafo.
  - Se ejecuta el algoritmo PRIM pasándole el mismo grafo como parámetro.
-  - Se devuelve el grafo de recubrimiento mínimo.
-  - Se imprime el nuevo grafo (vertices y aristas) para validarlo.
+    - Se devuelve el grafo de recubrimiento mínimo.
+    - Se imprime el nuevo grafo (vertices y aristas) para validarlo.
   
   Resultado devuelto por consola:
   ##### ARMANDO GRAFO #####
