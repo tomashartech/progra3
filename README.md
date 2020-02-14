@@ -1,18 +1,19 @@
 # progra3
 
-TP Obligatorio - Programaci√≥n 3 - UADE
+TP Obligatorio - ProgramaciÛn 3 - UADE
 
 Integrantes:
-  - Tom√°s Harte LU:1058032
+  - Tom·s Harte LU:1058032
   - Pedro Harte LU:1109413
   
 Descripci√≥n:
 - Se recibe una clase de Grafo implementada en Java.
+- Se trabajÛ exclusivamente con la implementaciÛn de grafos por listas de adyacencia
 - Se implementaron 2 algoritmos:
    - DFS: Recorrido de un grafo "bottom-up"
    - PRIM: Armado de un arbol de recubrimiento m√≠nimo
    
-Para la implementaci√≥n de los 2 algoritmos tuvimos que extender la clase de Grafo con los siguientes m√©todos:
+Para la implementaciÛn de los 2 algoritmos tuvimos que extender la clase de Grafo con los siguientes mÈtodos:
   - Vertices: 
     - Entrada: se recibe un Grafo.
     - Salida: se devuelve un arreglo de enteros con todos los vertices del grafo.
@@ -23,39 +24,39 @@ Para la implementaci√≥n de los 2 algoritmos tuvimos que extender la clase de Gra
 Algoritmos:
 
 DFS:
-  - Entrada: Se recibe un Grafo y un Origen (vertice) desde donde se iniciar√° el recorrido del grafo.
-  - Salida: El m√©todo va recorriendo el grafo en forma recursiva y va imprimiendo en pantalla los v√©rtices a medida que los v√° marcando.
-  - Descripci√≥n:
-      - Se localiza el v√©rtice origen y se lo marca como "visitado".
-      - Utilizando el m√©todo "Adyacentes" se obtienen todos los v√©rtices que est√©n conectados con el nodo de origen.
-      - Se recorren todos los v√©rtices adyacentes y si todav√≠a no ha sido "visitado" se llama recursivamente al mismo m√©todo pas√°ndole como entrada el v√©rtice actual como Origen.
-        - Esto hace que la funci√≥n se vuelva a ejecutar para todos los adyacentes sucesivamente hasta que haya uno que no tiene m√°s v√©rtices por "visitar".
+  - Entrada: Se recibe un Grafo y un Origen (vertice) desde donde se iniciar· el recorrido del grafo.
+  - Salida: El mÈtodo va recorriendo el grafo en forma recursiva y va imprimiendo en pantalla los vÈrtices a medida que los va marcando.
+  - DescripciÛn:
+  - Se localiza el vÈrtice origen y se lo marca como "visitado".
+  - Utilizando el mÈtodo "Adyacentes" se obtienen todos los vÈrtices que est·n conectados con el nodo de origen.
+  - Se recorren todos los vÈrtices adyacentes y si todavÌa no ha sido "visitado" se llama recursivamente al mismo mÈtodo pas·ndole como entrada el vÈrtice actual como Origen.
+        - Esto hace que la funciÛn se vuelva a ejecutar para todos los adyacentes sucesivamente hasta que haya uno que no tiene m·s vÈrtices por "visitar".
       - Se marca el origen como "marcado" y se imprime por pantalla.
       (al hacerse recursivamente se empieza a recorrer el grafo de forma "bottom-up").
   
 PRIM: 
-  - Entrada: Se recibe un Grafo
-  - Salida: Se genera un Grafo de Recubrimiento M√≠nimo en base al grafo proporcionado tomando en cuenta el peso de las aristas.
-  - Descripci√≥n:
-     - Se inicializa un nuevo grafo vac√≠o agregandole el primer v√©rtice del grafo original.
-     - Se van recorriendo todos los v√©rtices del grafo original (siempre y cuando no est√©n incluidos en el grafo nuevo).
-     - Utilizando el m√©todo de Adyacentes, se localizan los vertices adyacentes al nuevo grafo.
+  - Entrada: Se recibe un Grafoo
+  - Salida: Se genera un Grafo de Recubrimiento MÌnimo en base al grafo proporcionado tomando en cuenta el peso de las aristas.
+  - DescripciÛn:
+     - Se inicializa un nuevo grafo vacÌo agregandole el primer vÈrtice del grafo original.
+     - Se van recorriendo todos los vÈrtices del grafo original (siempre y cuando no estÈn incluidos en el grafo nuevo).
+     - Utilizando el mÈtodo de Adyacentes, se localizan los vertices adyacentes al nuevo grafo.
      - Por cada adyacente se obtienen las aristas y se van comparando los pesos de todas las aristas obtenidas hasta que nos quedamos con la de menor peso.
-     - Se inserta el v√©rtice adyacente que gan√≥ (con la arista de menor peso) y se inserta la arista que lo conecta con el nuevo grafo.
-      - Se repite el proceso con los dem√°s v√©rtices hasta que todos quedan conectados con el grafo nuevo.
-     - Se retorna el nuevo Grafo de Recubrimiento m√≠nimo.
+     - Se inserta el vÈrtice adyacente que "ganÛ" (con la arista de menor peso) y se inserta la arista que lo conecta con el nuevo grafo.
+     - Se repite el proceso con los dem·s vÈrtices hasta que todos quedan conectados con el grafo nuevo.
+     - Se retorna el nuevo Grafo de Recubrimiento mÌnimo.
      
      
- Verificaci√≥n:
+ VerificaciÛn:
  
-Se ejecut√≥ el c√≥digo implementado desde una clase main en la que se utilizan tanto los m√©todos de la clase Grafo prove√≠da como los m√©todos desarrollados.
+Se ejecuta el cÛdigo implementado desde una clase main en la que se utilizan tanto los mÈtodos de la clase Grafo proveÌda como los mÈtodos desarrollados.
  - Se inicia generando un grafo insertandole:
-    - 5 vertices {1,2,3,4,5}  (se imprimen los vertices por pantalla)
+    - 5 vertices {1,2,3,4,5}  (se imprimen los vertices por pantalla))
     - Aristas: 1-2; 1-3; 2-4; 2-5; 3-5; (se imprimen las aristas por pantalla)
- - Se ejecuta el algoritmo DFS pas√°ndole el grafo como par√°metro y el vertice 1 como el origen.
+ - Se ejecuta el algoritmo DFS pas·ndole el grafo como par·metro y el vertice 1 como el origen.
     - El algoritmo imprime como queda recorrido el grafo.
- - Se ejecuta el algoritmo PRIM pas√°ndole el mismo grafo como par√°metro.
-    - Se devuelve el grafo de recubrimiento m√≠nimo.
+ - Se ejecuta el algoritmo PRIM pas·ndole el mismo grafo como par·metro.
+    - Se devuelve el grafo de recubrimiento mÌnimo.
     - Se imprime el nuevo grafo (vertices y aristas) para validarlo.
   
   Resultado devuelto por consola:
